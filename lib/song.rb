@@ -28,7 +28,7 @@ class Song
     h
   end
 
-  def sel.artist_count
+  def self.artist_count
     h = {}
     artists.each{|e| h[e.to_sym] = @@artists.count(e)}
     h
