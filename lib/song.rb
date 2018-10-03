@@ -23,5 +23,14 @@ class Song
   end
 
   def self.genre_count
-    genres.
+    h = {}
+    genres.each{|e| h[e.to_sym] = @@genres.count(e)}
+    h
+  end
+
+  def sel.artist_count
+    h = {}
+    artists.each{|e| h[e.to_sym] = @@artists.count(e)}
+    h
+  end
 end
