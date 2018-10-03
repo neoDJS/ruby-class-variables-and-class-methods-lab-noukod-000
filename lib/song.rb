@@ -31,7 +31,7 @@ class Song
 
   def self.artist_count
     h = {}
-    artists.each{|e| h[e.to_sym] = @@artists.count(e)}
+    artists.each{|e| h[e] = @@artists.count(e)}
     h
   end
 end
